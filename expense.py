@@ -50,7 +50,7 @@ L = Label(T1,image=iconimage)
 L.pack()
 
 # ช่องรายการค่าใช้จ่าย
-L = Label(T1,text='รายการค่าใช้จ่าย', font=(None,30))
+L = Label(T1,text='รายการค่าใช้จ่าย', font=('TH SarabunPSK',30))
 L.pack(pady=5)
 
 v_expense = StringVar()
@@ -58,7 +58,7 @@ E1 = ttk.Entry(T1, textvariable=v_expense, font=FONT1)
 E1.pack(pady=5)
 
 # ช่องกรอกจำนวนเงินค่าใช้จ่าย
-L = Label(T1,text='จำนวนเงิน  (THB)', font=(None,30))
+L = Label(T1,text='จำนวนเงิน  (THB)', font=('TH SarabunPSK',30))
 L.pack(pady=5)
 
 v_amount = StringVar()
@@ -107,8 +107,8 @@ table.pack()
 
 # resize
 style = ttk.Style()
-style.configure('Treeview.Heading',font=(None,15))
-style.configure('Treeview',font=(None,13),rowhight=30)
+style.configure('Treeview.Heading',font=('TH SarabunPSK',15))
+style.configure('Treeview',font=('TH SarabunPSK',13),rowhight=30)
 
 #table.column('ลำดับ',width=50)
 #table.heading('ลำดับ',text='ลำดับ')
